@@ -11,3 +11,53 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+@font-face {
+  font-family: "VisbyHeavy";
+  src: url(./Fonts/Visby/VisbyHeavy.otf);
+}
+
+@font-face {
+  font-family: "VisbyExtrabold";
+  src: url(./Fonts/Visby/VisbyExtrabold.otf);
+}
+
+@font-face {
+  font-family: "VisbyBold";
+  src: url(./Fonts/Visby/VisbyBold.otf);
+}
+
+@font-face {
+  font-family: "VisbySemibold";
+  src: url(./Fonts/Visby/VisbySemibold.otf);
+}
+
+@font-face {
+  font-family: "VisbyMedium";
+  src: url(./Fonts/Visby/VisbyMedium.otf);
+}
+
+@font-face {
+  font-family: "VisbyRegular";
+  src: url(./Fonts/Visby/VisbyRegular.otf);
+}
+
+@font-face {
+  font-family: "Visbylight";
+  src: url(./Fonts/Visby/VisbyLight.otf);
+}
+
+@font-face {
+  font-family: "VisbyThin";
+  src: url(./Fonts/Visby/VisbyThin.otf);
+}
+
+
+
+
+@font-face {
+  font-family: "VisbyCFHeavy";
+  src: url("./Fonts//Visby/Fontspring-DEMO-visbycf-heavy.otf");
+}

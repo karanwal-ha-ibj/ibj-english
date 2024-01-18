@@ -1,3 +1,45 @@
-.appbar{
-    background-color: red;
+.home-wrapper{
+    padding: 15vh 10vw 0vh 10vw;
 }
+
+.title{
+    color: #00509e;
+    font-family: VisbyBold;
+    font-size: 50px;
+    font-weight: 1000;
+}
+
+.gradient-text {
+    /* background: linear-gradient(to right, #ff00cc, #3333cc); #d90777*/
+    background: linear-gradient(to right, #ff0088, #3333cc);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .typing-text {
+    overflow: hidden; /* Hide overflow to create the typing effect */
+    border-right: 2px solid black; /* Simulate the cursor */
+    white-space: nowrap; /* Prevent text from wrapping */
+    margin: 0;
+    font-size: 3em;
+    animation: typing 3s steps(40, end), blink-caret 0.5s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: black;
+    }
+  }

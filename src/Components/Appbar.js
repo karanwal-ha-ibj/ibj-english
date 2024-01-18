@@ -19,16 +19,17 @@ const Appbar = () => {
         </div>
 
         <div className="menu-wrapper">
-            <a href="/" className="menuword"><p>会社情報</p></a>
-            <a href="/" className="menuword"><p>ニュース</p></a>
-            <a href="/" className="menuword"><p>サービス</p></a>
-            <a href="/" className="menuword"><p>投資家情報</p></a>
-            <a href="/" className="menuword"><p>サステナビリティ</p></a>
-            <a href="/" className="menuword"><p>採用情報</p></a>
-            <div className="language-wrapper">
-                <LanguageIcon style={{ color: "#00509e", width: "21px" }} />
+            <a href="/" className="menuword menu-item"><p>会社情報</p></a>
+            <a href="/" className="menuword menu-item"><p>ニュース</p></a>
+            <a href="/" className="menuword menu-item"><p>サービス</p></a>
+            <a href="/" className="menuword menu-item"><p>投資家情報</p></a>
+            <a href="/" className="menuword menu-item"><p>サステナビリティ</p></a>
+            <a href="/" className="menuword menu-item"><p>採用情報</p></a>
+            <a href="https://www.ibjapan.jp/" className="language-wrapper">
+                {/* <LanguageIcon style={{ color: "#00509e", width: "21px" }} /> */}
+                <img src="https://www.ibjapan.jp/img/common/icon-lang.svg"></img>
                 <p style={{ color: "#00509e", fontWeight: "bold" }}>日本度</p>
-            </div>
+            </a>
         </div>
 
         <div className="mobmenu-wrapper" onClick={toggleDropdown}>
