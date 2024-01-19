@@ -1,30 +1,93 @@
 .home-wrapper{
-    padding: 15vh 10vw 0vh 10vw;
+    padding: 15vh 15vw 0vh 15vw;
+}
+@media (max-width: 600px) {
+    .home-wrapper {
+        padding: 10vh 10vw 0vh 10vw;
+    }
 }
 
+.home-wrapper2{
+    padding: 10vh 15vw 10vh 15vw;
+    background: linear-gradient(to bottom right, #00509e,black,black,black,#f00080);
+    margin-top: 100px;
+}
+@media (max-width: 600px) {
+    .home-wrapper2 {
+        padding: 10vh 10vw 0vh 10vw;
+
+    }
+}
+
+.main-title{
+    font-size: 70px;
+    padding: 2px 0px;
+    font-family: system-ui;
+    font-weight: 900;
+    transition: font-size 0.5s ease;
+}
+@media (max-width: 600px) {
+    .main-title {
+      font-size: 10vw; 
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .title {
+      font-size: 15vw;
+    }
+  }
+
 .title{
-    color: #00509e;
-    font-family: VisbyBold;
-    font-size: 50px;
-    font-weight: 1000;
+    font-family: system-ui;
+    font-size: 2vw;
+    font-weight: 800;
+    transition: font-size 0.5s ease;
+}
+@media (max-width: 600px) {
+    .title {
+      font-size: 5vw; 
+    }
+  }
+
+.title-container{
+    line-height: 6px;
+}
+@media (max-width: 600px) {
+    .title-container {
+      line-height: 22px;
+
+    }
+  }
+
+.para{
+    font-size: large;
+    font-family: system-ui;
+    text-align: justify;
+    transition: font-size 0.5s ease;
+    padding-right: 30vw;
+}
+@media (max-width: 600px) {
+    .para {
+        text-align: justify;
+    }
 }
 
 .gradient-text {
-    /* background: linear-gradient(to right, #ff00cc, #3333cc); #d90777*/
-    background: linear-gradient(to right, #ff0088, #3333cc);
+    /* background: linear-gradient(to right, #ff00cc, #3333cc); #d90777 #8800ff*/
+    /* background: linear-gradient(to right, #00509e, #003e7a, black); */
+    background: linear-gradient(to right, #00509e,#f00080);
     -webkit-background-clip: text;
     color: transparent;
   }
 
   .typing-text {
-    overflow: hidden; /* Hide overflow to create the typing effect */
-    border-right: 2px solid black; /* Simulate the cursor */
-    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden;
+    border-right: 2px solid #5e5e5e;
+    white-space: nowrap;
     margin: 0;
-    font-size: 3em;
     animation: typing 3s steps(40, end), blink-caret 0.5s step-end infinite;
   }
-  
   @keyframes typing {
     from {
       width: 0;
@@ -33,13 +96,196 @@
       width: 100%;
     }
   }
-  
   @keyframes blink-caret {
     from,
     to {
       border-color: transparent;
     }
     50% {
-      border-color: black;
+      border-color: #5e5e5e;
     }
   }
+
+
+  .container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+   }
+   
+   img {
+     max-width: 100%;
+     max-height:100%;
+   }
+   
+   .text {
+     font-size: 70px;
+   }
+    .counter{
+        font-family: system-ui;
+        font-weight: 900;
+        font-size: 100px;
+    }
+   .counter-wrapper{
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+   }
+   .counter-text{
+    font-family: system-ui;
+    font-weight: 200;
+    font-size: 50px;
+    margin-top: -25px;
+   }
+   .centered-container {
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --font1: "Poppins";
+}
+
+body {
+  margin: 0;
+  font-family: var(--font1);
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.flex, .flex__col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex__col {
+  flex-direction: column;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+main.flex {
+  width: 100%;
+  height: 200vh;
+  align-items: flex-start;
+}
+
+.items {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.items__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150vw;
+  height: 150vw;
+  gap: 2vw;
+  transform: translate(-50%, -50%) rotate(45deg);
+  will-change: transform;
+}
+
+.items__col {
+  position: relative;
+  gap: 2vw;
+  will-change: transform;
+}
+
+.item {
+  position: relative;
+  width: 25vw;
+  height: auto;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  will-change: width;
+}
+
+.item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  will-change: transform;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  height: 60%;
+  padding: 20%;
+  align-items: flex-start;
+  background-color: rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 100%;
+  transform: translate(-50%, -50%) scale(0);
+  will-change: border-radius transform;
+}
+
+h1 {
+  font-size: 4vw;
+  font-weight: 700;
+  line-height: 4vw;
+  margin: 0;
+  transform-origin: top left;
+  transform: scale(0);
+  will-change: transform;
+}
+
+p {
+  font-size: 1.2vw;
+  font-weight: 600;
+  transform-origin: top left;
+  transform: scale(0);
+  will-change: transform;
+}
+
+.noise {
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background-image: url("https://www.paulrogerdev.fr/codepen/noise.png");
+}
+
+   */
