@@ -1,5 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import gsap from 'gsap';
+// import "./css/homeanime.scss";
+// import "./animation";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import img1 from "../Images/top1.png";
 import img2 from "../Images/top2.png";
@@ -32,45 +34,8 @@ function Home () {
     };
     window.requestAnimationFrame(step);
   }
-  
   const obj = document.getElementById("counter");
-  animateValue(obj, 0, 11902, 3000);
-
-
-  // useEffect(() => {
-  //   var itemsImg = document.querySelectorAll(".item img")
-
-  //   itemsImg.forEach(function(item, i) {
-  //     item.src = "https://source.unsplash.com/random/?iceland&" + i
-  //   })
-
-  //   var TL = gsap.timeline({scrollTrigger: {
-  //     trigger: "main",
-  //     pin: ".items",
-  //     pinSpacing: false,
-  //     scrub: 2,
-  //     start: () => window.innerHeight + " bottom",
-  //     end: "bottom bottom",
-  //     invalidateOnRefresh: true
-  //   }})
-
-  //   TL.to(".items__inner", {rotate: 0}, 0)
-  //   TL.fromTo(".items .items__col:nth-child(2n + 0)", {y: "-0vh"}, {y: "50vh"}, 0)
-  //   TL.fromTo(".items .items__col:nth-child(2n + 1)", {y: "50vh"}, {y: "0vh"}, 0)
-  //   TL.to(".item", {width: "50vw"}, 0)
-  //   TL.fromTo(".item img", {scale: 2}, {scale: 1}, 0)
-
-  //   var contentTL = gsap.timeline({scrollTrigger: {
-  //     trigger: "main",
-  //     scrub: 2,
-  //     start: () => window.innerHeight * 1 + " bottom",
-  //     end: "bottom bottom",
-  //     invalidateOnRefresh: true
-  //   }})
-  //   contentTL.fromTo(".content", 1, {borderRadius: "100%", scale: 0}, {borderRadius: "0%", scale: 1})
-  //   contentTL.fromTo(".content h1", 1, {scale: 0}, {scale: 1})
-  //   contentTL.fromTo(".content p", 1, {scale: 0}, {scale: 1})
-  // });
+  animateValue(obj, 0, 11902, 100);
 
 
 
@@ -102,7 +67,7 @@ function Home () {
 
   return (
     <>
-      <div>
+      <div className="home">
         {/* <SimpleImageSlider
           width={"100vw"}
           height={"50vh"}
@@ -120,7 +85,7 @@ function Home () {
           <div className="para">
           <p style={{color:"#303030"}}>By providing total support that goes beyond just matching, we hope to contribute to solving Japan's serious problem of population decline by connecting people who want to get married.</p>
           {/* <div style={{background: "linear-gradient(to right, #f00080, #00509e", borderRadius:"50px", height:"5px", marginLeft:"500px", marginRight:"-50px", marginTop:"35px"}}></div> */}
-          <div style={{textAlign:"right", marginRight:"-60px", marginTop:"30px"}}>
+          <div className="gradient-line">
             <img src={gradient}></img>
           </div>
           </div>
@@ -139,132 +104,6 @@ function Home () {
             </div>
           </div>
         </div>
-        {/* <main class="flex">
-          <div class="items">
-            <div class="items__inner flex">
-              <div class="items__col flex__col">
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-              </div>
-              <div class="items__col flex__col">
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-              </div>
-              <div class="items__col flex__col">
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                  <div class="content flex__col">
-                    <h1>Gallery animation</h1>
-                    <p>Animation with GSAP and ScrollTrigger.</p>
-                  </div>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-              </div>
-              <div class="items__col flex__col">
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-              </div>
-              <div class="items__col flex__col">
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-                <div class="item">
-                  <img></img>
-                </div>
-              </div>
-            </div>
-          </div>
-        </main> 
-<div class="noise"></div> */}
           {/* <div class="container">
             <div class="image">
               <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>

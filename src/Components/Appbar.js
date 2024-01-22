@@ -19,12 +19,12 @@ const Appbar = () => {
         </div>
 
         <div className="menu-wrapper">
-            <a href="/" className="menuword menu-item"><p>会社情報</p></a>
-            <a href="/" className="menuword menu-item"><p>ニュース</p></a>
-            <a href="/" className="menuword menu-item"><p>サービス</p></a>
-            <a href="/" className="menuword menu-item"><p>投資家情報</p></a>
-            <a href="/" className="menuword menu-item"><p>サステナビリティ</p></a>
-            <a href="/" className="menuword menu-item"><p>採用情報</p></a>
+            <a href="/" className="menuword menu-item"><p>About Us</p></a>
+            <a href="/" className="menuword menu-item"><p>News</p></a>
+            <a href="/" className="menuword menu-item"><p>Services</p></a>
+            <a href="/" className="menuword menu-item"><p>Investor Information</p></a>
+            <a href="/" className="menuword menu-item"><p>Sustainability</p></a>
+            <a href="/" className="menuword menu-item"><p>Career at IBJ</p></a>
             <a href="https://www.ibjapan.jp/" className="language-wrapper">
                 {/* <LanguageIcon style={{ color: "#00509e", width: "21px" }} /> */}
                 <img src="https://www.ibjapan.jp/img/common/icon-lang.svg"></img>
@@ -43,12 +43,12 @@ const Appbar = () => {
 
             {isDropdownOpen && (
             <div className="dropdown-menu">
-                <p>会社情報</p>
-                <p>ニュース</p>
-                <p>サービス</p>
-                <p>投資家情報</p>
-                <p>サステナビリティ</p>
-                <p>採用情報</p>
+                <p>About Us</p>
+                <p>News</p>
+                <p>Services</p>
+                <p>Investor Information</p>
+                <p>Sustainability</p>
+                <p>Career at IBJ</p>
             </div>
           )}
         </div>
