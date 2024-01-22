@@ -69,7 +69,8 @@
 }
 @media (max-width: 600px) {
     .para {
-        text-align: justify;
+        text-align: left;
+        line-height: 1.3;
         padding-right: 2vw;
     }
 }
@@ -83,7 +84,8 @@
   .gradient-line{
     text-align: right;
     margin-right: -5vw;
-    margin-top: 60px;
+    margin-top: 0px;
+    margin-bottom: 20px;
   }
 }
 
