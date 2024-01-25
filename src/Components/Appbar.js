@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import ibjlogo from "../Images/logo-IBJ.png";
+import ibjlogo from "../Images/logo-IBJ.svg";
 import LanguageIcon from "@mui/icons-material/Language";
 import MenuIcon from "@mui/icons-material/Menu";
-import "../Components/components/appbar.css";
+import "../Components/css/appbar.css";
 
 const Appbar = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -15,7 +15,7 @@ const Appbar = () => {
     <>
       <div className="appbar">
         <div>
-          <img style={{ width: "110px", marginLeft: "20px" }} src={ibjlogo} alt="IBJlogo" />
+          <img style={{ width: "400px", margin: "-10px 0px -10px -100px" }} src={ibjlogo} alt="IBJlogo" />
         </div>
 
         <div className="menu-wrapper">
@@ -27,7 +27,7 @@ const Appbar = () => {
             <a href="/" className="menuword menu-item"><p>Career at IBJ</p></a>
             <a href="https://www.ibjapan.jp/" className="language-wrapper">
                 {/* <LanguageIcon style={{ color: "#00509e", width: "21px" }} /> */}
-                <img src="https://www.ibjapan.jp/img/common/icon-lang.svg"></img>
+                <img src="https://www.ibjapan.jp/img/common/icon-lang.svg" alt=""></img>
                 <p style={{ color: "#00509e", fontWeight: "bold" }}>日本度</p>
             </a>
         </div>

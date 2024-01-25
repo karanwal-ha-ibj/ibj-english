@@ -7,10 +7,14 @@ import img1 from "../Images/top1.png";
 import img2 from "../Images/top2.png";
 import img3 from "../Images/top3.png";
 import img4 from "../Images/top4.webp";
-import gradient from "../Images/gradient line.svg";
-import ibjcount from "../Images/Group 1.svg";
-import "./css/home.css"
+import services from "../Images/SERVICES.svg";
+import fire from "../Images/icons/Fire.svg";
+import arrow from "../Images/icons/arrow.svg";
+
+import ibj from "../Images/services/logo-IBJ.svg";
+import "./css/home.css";
 import SimpleImageSlider from "react-simple-image-slider";
+
 gsap.registerPlugin(ScrollTrigger);
 
 function Home () {
@@ -67,7 +71,7 @@ function Home () {
 
   return (
     <>
-      <div className="home">
+      <div>
         {/* <SimpleImageSlider
           width={"100vw"}
           height={"50vh"}
@@ -77,42 +81,45 @@ function Home () {
           // autoPlay={true}
           autoPlayDelay={2}
         /> */}
-        <div className="home-wrapper">
-          <div className="title-container">
-            <span className="main-title gradient-text typing-text">{text}</span>
-            <p className="title" style={{color:"#303030"}}>Make everyone with a connection happy!</p>
-          </div>
-          <div className="para">
-          <p style={{color:"#303030"}}>By providing total support that goes beyond just matching, we hope to contribute to solving Japan's serious problem of population decline by connecting people who want to get married.</p>
-          {/* <div style={{background: "linear-gradient(to right, #f00080, #00509e", borderRadius:"50px", height:"5px", marginLeft:"500px", marginRight:"-50px", marginTop:"35px"}}></div> */}
-          <div className="gradient-line">
-            <img src={gradient}></img>
-          </div>
-          </div>
-          {/* <div>
-            <div style={{ height: '0vh' }}></div>
-            <img ref={ref}
-                src={ibjcount}
-                alt="IBJcount" />
-          </div> */}
-        </div>
         <div className="home-wrapper2">
-          <div className="counter-wrapper">
-            <div class="centered-container">
-              <div className="counter" id="counter">0</div>
+          <div className="item1">
+            <p>Welcome</p>
+            <img style={{width:"15px"}} src={fire}></img>
+          </div>
+          <div className="counting">
+            <p className="counter">11,921+</p>
+            <p className="counter-text">Yearly Marriages</p>
+          </div>
+          <div className="item2">
+            <img style={{width:"20px", marginTop:"17px"}} src={arrow}></img>
+            <p>No.1: Japan Marketing Research <br/>Organization (Number of <br/>marriages: 2022 results, targeting <br/>major marriage agencies and <br/>federations)</p>
+          </div>
+          {/* <div className="counter-wrapper">
+            <div>
+              <div className="counter" id="counter"></div>
               <p className="counter-text">Yeary marriages</p>
             </div>
-          </div>
+          </div> */}
         </div>
-          {/* <div class="container">
-            <div class="image">
-              <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-              <div class="elfsight-app-40385314-a20f-4fb6-bbb4-a01b44cc0c1b" data-elfsight-app-lazy></div>
+          {/* <div className="service-div">
+            <div>
+              <img className="text-image" src={services} alt=""></img>
             </div>
-            <div class="text">
-              <h1>This is a beautiful picture.</h1>
+            <div>
+              <h1 className="service-heading">IBJ</h1>
+
+
+              <section>
+                <div class="container">
+                  <a href="/" class="btn btn-5">
+                    <img className="service-logo" src={ibj} />
+                  </a> 
+                </div>
+              </section>
+              <h1 className="service-heading">Group Services</h1>
             </div>
           </div> */}
+          
       </div>
     </>
   );
