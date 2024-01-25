@@ -15,8 +15,6 @@
   align-items: center;
   height: 120vh;
   margin-top: -200px;
-  /* background: linear-gradient(to bottom right, #00509e,black,black,black,#f00080); */
-  /* margin-top: -16px; */
   background-repeat: no-repeat;
   color: black;
   background-image: url(../../Images/main-frame.png);
@@ -25,10 +23,9 @@
 @media (max-width: 600px) {
     .home-wrapper2 {
       display: flex;
+      flex-direction: column;
       margin-top: -200px;
       height: 1200px;
-      flex-direction: column;
-      padding: 10vh 10vw 0vh 10vw;
       background-image: url(../../Images/main-frame-ph.png);
 
     }
