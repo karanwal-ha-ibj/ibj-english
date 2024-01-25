@@ -26,6 +26,7 @@
     .home-wrapper2 {
       display: flex;
       margin-top: -300px;
+      height: 1200px;
       flex-direction: column;
       padding: 10vh 10vw 0vh 10vw;
       background-image: url(../../Images/main-frame-ph.png);
@@ -128,7 +129,7 @@ margin-top: 30px;
   .item1{
     display: flex;
     gap: 5px;
-    margin: 0px 0px 0px 0px;
+    margin: -200px 0px 0px 0px;
   }
   
   .item2{
@@ -136,7 +137,7 @@ margin-top: 30px;
     gap: 10px;
     justify-content: start;
     align-items: start;
-    margin: 70px 0px 0px 0px;
+    margin: 50px 0px 0px 0px;
   }
   
   .counting{
