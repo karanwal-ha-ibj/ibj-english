@@ -25,7 +25,7 @@
 @media (max-width: 600px) {
     .home-wrapper2 {
       display: flex;
-      margin-top: -300px;
+      margin-top: -200px;
       height: 1200px;
       flex-direction: column;
       padding: 10vh 10vw 0vh 10vw;

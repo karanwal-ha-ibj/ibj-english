@@ -11,7 +11,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 function IBJthought () {
     const redirectToIBJapan = () => {
-        // Change the window location to https://www.ibjapan.jp/features/
         window.location.href = 'https://www.ibjapan.jp/features/';
       };
 
