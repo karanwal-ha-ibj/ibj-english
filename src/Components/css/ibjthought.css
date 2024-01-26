@@ -16,13 +16,14 @@
 }
 
 .dress-image{
-    height: auto;
+    height: 400px;
     width: auto;
-    margin-left: 50px;
 }
 @media (max-width: 600px) {
     .dress-image {
+        height: auto;
         margin-top: -300px;
+        margin-left: 50px;
     }
 }
 
