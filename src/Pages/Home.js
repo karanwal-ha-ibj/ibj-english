@@ -10,10 +10,15 @@ import img4 from "../Images/top4.webp";
 import services from "../Images/SERVICES.svg";
 import fire from "../Images/icons/Fire.svg";
 import arrow from "../Images/icons/arrow.svg";
+import thinarrow from "../Images/icons/arrow-right-thin-svgrepo-com.svg";
 
 import ibj from "../Images/services/logo-IBJ.svg";
 import "./css/home.css";
 import SimpleImageSlider from "react-simple-image-slider";
+
+// import '@splinetool/viewer/build/spline-viewer.js'; 
+// import '@splinetool/viewer/build/spline-viewer.css';
+// import { SplineViewer } from '@splinetool/viewer/dist/index.js';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -101,6 +106,17 @@ function Home () {
             </div>
           </div> */}
         </div>
+
+        <div className="newsletter-main">
+          <div>
+            <p>Subscribe to our Newsletter</p>
+          </div>
+          <div className="newsletter-wrapper">
+            <input className="newsletter-input" placeholder="E-mail"></input>
+            <button type="submit" className="newsletter-button"><img src={thinarrow} style={{width:"30px"}}></img></button>
+          </div>
+        </div>
+        {/* <SplineViewer url="https://prod.spline.design/NYG7Ha9MrPM5svTF/scene.splinecode"></SplineViewer> */}
           {/* <div className="service-div">
             <div>
               <img className="text-image" src={services} alt=""></img>

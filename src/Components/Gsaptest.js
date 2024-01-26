@@ -84,12 +84,12 @@ const Gsaptest = () => {
               {/* <p style={{color:"black"}}>MATRIMONY</p> */}
             </div>
           </li>
-          {/* <li className="slide">
+          <li className="slide">
             <div className="background" style={{ backgroundImage: `url(${intro5})` }}></div>
             <div className="content">
-              <p style={{color:"black"}}>COMPANY</p>
+              {/* <p style={{color:"black"}}>COMPANY</p> */}
             </div>
-          </li> */}
+          </li>
           <li className="slide">
             <div className="background" style={{ backgroundImage: `url(${intro6})` }}></div>
             <div className="content">

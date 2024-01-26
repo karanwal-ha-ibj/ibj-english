@@ -3,9 +3,11 @@ import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gradient from "../Images/gradient line.svg";
 import "../Pages/css/more.scss";
+import dress from "../Images/3d-casual-life-couple-walks-with-baby.png";
 
 import ibj from "../Images/services/logo-IBJ.svg";
 import "../Pages/css/home.css";
+import "../Components/css/ibjthought.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -85,7 +87,6 @@ function IBJthought () {
                 </span>
             </button>
             <br/>
-
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
             <defs>
                 <filter id="goo">
@@ -98,6 +99,7 @@ function IBJthought () {
             </div>
 
         </div>
+        <img src={dress} className="dress-image"></img>
       </div>
     </>
   );

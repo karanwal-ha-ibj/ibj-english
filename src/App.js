@@ -11,8 +11,8 @@ function App() {
       <div>
         <Appbar />
         <IBJthought/>
-        {/* <Gsap/> */}
         <Home />
+        {/* <Gsap/> */}
       </div>
     </>
   );

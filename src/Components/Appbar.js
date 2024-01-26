@@ -15,7 +15,7 @@ const Appbar = () => {
     <>
       <div className="appbar">
         <div>
-          <img style={{ width: "400px", margin: "-10px 0px -10px -100px" }} src={ibjlogo} alt="IBJlogo" />
+          <img className="logo" src={ibjlogo} alt="IBJlogo" />
         </div>
 
         <div className="menu-wrapper">

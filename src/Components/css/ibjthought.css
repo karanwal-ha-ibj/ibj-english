@@ -1,0 +1,122 @@
+.home{
+    display: flex;
+    padding: 300px 0px 0px 200px;
+  }
+  @media (max-width: 600px) {
+    .home {
+        flex-direction: column;
+        padding: 170px 50px 0px 50px;
+    }
+}
+
+.home-wrapper{
+    height: 100vh;
+    /* padding: 300px 15vw 0px 230px; */
+    padding: 0px 0px 0px 0px;
+}
+
+.dress-image{
+    height: auto;
+    width: auto;
+    margin-left: 50px;
+}
+@media (max-width: 600px) {
+    .dress-image {
+        margin-top: -300px;
+    }
+}
+
+.main-title{
+    font-size: 65px;
+    font-family: system-ui;
+    font-weight: 900;
+    transition: font-size 0.5s ease;
+  }
+  @media (max-width: 600px) {
+    .main-title {
+      font-size: 10vw; 
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .title {
+      font-size: 15vw;
+    }
+  }
+  
+  .title{
+    font-family: system-ui;
+    font-size: 2vw;
+    font-weight: 800;
+    transition: font-size 0.5s ease;
+  }
+  @media (max-width: 600px) {
+    .title {
+      font-size: 5vw; 
+    }
+  }
+  
+  .title-container{
+    line-height: 6px;
+  }
+  @media (max-width: 600px) {
+    .title-container {
+      line-height: 22px;
+  
+    }
+  }
+  
+  .para{
+    font-size: large;
+    font-family: system-ui;
+    /* text-align: justify; */
+    transition: font-size 0.5s ease;
+    padding-right: 10vw;
+  }
+  @media (max-width: 600px) {
+    .para {
+        text-align: left;
+        line-height: 1.3;
+        padding-right: 2vw;
+    }
+  }
+  
+  .gradient-line{
+  text-align: right;
+  /* margin-right: -60px; */
+  margin-top: 30px;
+  }
+  @media (max-width: 600px) {
+  .gradient-line{
+    text-align: right;
+    margin-right: -5vw;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  }
+
+
+  .typing-text {
+    overflow: hidden;
+    border-right: 2px solid #5e5e5e;
+    white-space: nowrap;
+    margin: 0;
+    animation: typing 3s steps(40, end), blink-caret 0.5s step-end infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #5e5e5e;
+    }
+  }
