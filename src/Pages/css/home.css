@@ -1,5 +1,6 @@
 .test{
   background-image: url(../../Images/main-frame.png);
+  background-repeat: no-repeat;
   background-size: 100%;
 }
 
@@ -7,11 +8,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 120vh;
+  height: 125vh;
   margin-top: -500px;
   background-repeat: no-repeat;
   color: #171717;
   background-image: url(../../Images/main-frame-top.svg); 
+  background-repeat: no-repeat;
   background-size: 100%;
 }
 @media (max-width: 600px) {
@@ -21,6 +23,7 @@
       margin-top: -200px;
       height: 1200px;
       background-image: url(../../Images/main-frame-ph.png);
+      background-repeat: no-repeat;
 
     }
 }
@@ -28,7 +31,7 @@
 .item1{
   display: flex;
   gap: 5px;
-  margin: -350px 250px 0px -70px;
+  margin: -450px 250px 0px -70px;
 }
 
 .item2{
@@ -36,7 +39,7 @@
   gap: 10px;
   justify-content: start;
   align-items: start;
-  margin: -280px 0px 0px -100px;
+  margin: -380px 0px 0px -100px;
 }
 
 .counting{
@@ -45,7 +48,7 @@
   justify-content: center;
   align-items: center;
   line-height: 1px;
-  margin: -110px 200px 0px 0px;
+  margin: -210px 200px 0px 0px;
 }
 
 @media (max-width: 600px) {
