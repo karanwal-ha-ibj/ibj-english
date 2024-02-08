@@ -1,7 +1,6 @@
 import Home from "./Pages/Home";
 import Appbar from "./Components/Appbar";
-import Gsap from "./Components/Gsaptest";
-import Ibjthought from "./Components/IBJthought";
+// import Gsap from "./Components/Gsaptest";
 import './App.css';
 import IBJthought from "./Components/IBJthought";
 

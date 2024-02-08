@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import ibj from "../Images/services/logo-IBJ.svg";
 import "../Components/gsaptest.css";
 
 import intro1 from "../Images/intro/ibj1.jpeg";

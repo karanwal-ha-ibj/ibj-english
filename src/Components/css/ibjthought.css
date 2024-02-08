@@ -58,8 +58,16 @@
     }
   }
   
+.gradient-text {
+    /* background: linear-gradient(to right, #ff00cc, #3333cc); #d90777 #8800ff*/
+    /* background: linear-gradient(to right, #00509e, #003e7a, black); */
+    background: linear-gradient(to right, #00478c,#00478c, #249db8);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
   .title-container{
-    line-height: 6px;
+    line-height: 8px;
   }
   @media (max-width: 600px) {
     .title-container {

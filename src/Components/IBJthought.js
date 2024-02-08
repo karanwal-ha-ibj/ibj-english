@@ -5,7 +5,6 @@ import gradient from "../Images/gradient line.svg";
 import "../Pages/css/more.scss";
 import dress from "../Images/3d-casual-life-couple-walks-with-baby.png";
 
-import ibj from "../Images/services/logo-IBJ.svg";
 import "../Pages/css/home.css";
 import "../Components/css/ibjthought.css";
 
@@ -35,7 +34,7 @@ function IBJthought () {
 
 
   useEffect(() => {
-    const targetText = "IBJ's thought."; // Replace with your desired text
+    const targetText = "IBJ's Thought."; // Replace with your desired text
     let currentIndex = 0;
 
     const intervalId = setInterval(() => {
@@ -99,7 +98,7 @@ function IBJthought () {
             </div>
 
         </div>
-        <img src={dress} className="dress-image"></img>
+        <img src={dress} className="dress-image" alt=""></img>
       </div>
     </>
   );
