@@ -1,7 +1,12 @@
 .home{
     display: flex;
     padding: 300px 0px 0px 200px;
-  }
+}
+@media screen and (min-width: 1700px) {
+    .home{
+        padding: 300px 150px 0px 300px;
+    }
+}
   @media (max-width: 600px) {
     .home {
         flex-direction: column;
@@ -19,6 +24,7 @@
     height: 400px;
     width: auto;
 }
+
 @media (max-width: 600px) {
     .dress-image {
         height: auto;
@@ -79,9 +85,14 @@
   .para{
     font-size: large;
     font-family: system-ui;
-    /* text-align: justify; */
+    text-align: justify;
     transition: font-size 0.5s ease;
     padding-right: 10vw;
+  }
+  @media screen and (min-width: 1700px) {
+    .para{
+        padding-right: 12vw;
+    }
   }
   @media (max-width: 600px) {
     .para {

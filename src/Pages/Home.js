@@ -60,7 +60,7 @@ function Home () {
       scrollTrigger: {
         trigger: el,
         start: "top bottom", // Trigger animation when the top of the div reaches the center of the viewport
-        end: "center bottom", // End animation when the bottom of the div reaches the center of the viewport
+        end: "top center", // End animation when the bottom of the div reaches the center of the viewport
         scrub: true, // Smoothly animates the movement
       }
     });
@@ -163,7 +163,8 @@ function Home () {
                       <img className="service-logo" src={ibjlife} alt="Service Logo"/>
                     </a> 
                   </div>
-                <h1 className="service-heading">Group Services</h1>
+                <h1 className="service-heading" style={{marginTop:"50px"}}>Group Services</h1>
+                <div style={{height:"1px", width:"350px", backgroundColor:"#00509e", marginTop:"-10px", marginBottom:"30px"}}/>
                 <div>
                   <img className="service-logo" src={zwei} alt="Service Logo"/>
                   <img className="service-logo" src={sunmari} alt="Service Logo"/>
