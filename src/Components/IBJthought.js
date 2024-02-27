@@ -68,7 +68,7 @@ function IBJthought () {
             <p className="title" style={{color:"#303030"}}>Make everyone with a connection happy!</p>
           </div>
           <div className="para">
-          <p style={{color:"#303030"}}>By providing total support that goes beyond just matching, we hope to contribute to solving Japan's serious problem of population decline by connecting people who want to get married.</p>
+            <p style={{color:"#303030"}}>By providing total support that goes beyond just matching, we hope to contribute to solving Japan's serious problem of population decline by connecting people who want to get married.</p>
           <div className="gradient-line">
             <img src={gradient} alt=""></img>
           </div>

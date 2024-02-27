@@ -135,6 +135,7 @@
     color: #00509e;
     font-weight: 600;
     font-size: 30px;
+    margin-left: 10px;
   }
 
   .text-image {
@@ -168,7 +169,7 @@
       width: 300px;
       padding: 10px 0px;
       box-shadow: 2px 2px 10px rgba(50, 50, 50, 0.15);
-      border-radius: 10px;
+      /* border-radius: 10px; */
       margin-right: 30px;
       margin-bottom: 20px;
       transition: all 0.3s ease-out;

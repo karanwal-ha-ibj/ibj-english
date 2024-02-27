@@ -25,12 +25,25 @@ import youbride from "../Images/services/logo-youbride.png";
 import zwei from "../Images/services/logo-zwei.svg";
 import kvillage from "../Images/services/logo-kvillage.svg";
 
+import { Application } from '@splinetool/runtime';
+
 import "./css/home.css";
 import SimpleImageSlider from "react-simple-image-slider";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function Home () {
+
+  useEffect(() => {
+    const canvas = document.getElementById('canvas3d');
+    const app = new Application(canvas);
+    app.load('Loading...');
+
+    return () => {
+      // Cleanup code if needed
+    };
+  }, []);
+
   const [text, setText] = useState("");
   
   useEffect(() => {
@@ -151,7 +164,10 @@ function Home () {
               >
               <div className="services-wrapper">
                 <h1 className="service-heading">IBJ</h1>
-                <div style={{height:"1px", width:"150px", backgroundColor:"#00509e", marginTop:"-10px", marginBottom:"30px"}}/>
+                <div style={{display:"flex"}}>
+                  <div style={{height:"1px", width:"100px", backgroundColor:"#00509e", marginTop:"-15px", marginBottom:"30px", opacity:"20%"}}/>
+                  <div style={{height:"1px", width:"50px", backgroundColor:"red", marginTop:"-15px", marginBottom:"30px", opacity:"20%"}}/>
+                </div>
                   <div>
                     <a href="/">
                       <img className="service-logo" src={ibj} alt="Service Logo"/>
@@ -164,7 +180,10 @@ function Home () {
                     </a> 
                   </div>
                 <h1 className="service-heading" style={{marginTop:"50px"}}>Group Services</h1>
-                <div style={{height:"1px", width:"350px", backgroundColor:"#00509e", marginTop:"-10px", marginBottom:"30px"}}/>
+                <div style={{display:"flex"}}>
+                  <div style={{height:"1px", width:"250px", backgroundColor:"#00509e", marginTop:"-15px", marginBottom:"30px", opacity:"20%"}}/>
+                  <div style={{height:"1px", width:"100px", backgroundColor:"red", marginTop:"-15px", marginBottom:"30px", opacity:"20%"}}/>
+                </div>
                 <div>
                   <img className="service-logo" src={zwei} alt="Service Logo"/>
                   <img className="service-logo" src={sunmari} alt="Service Logo"/>
@@ -175,6 +194,9 @@ function Home () {
               </div>
               </div>
             </div>
+          </div>
+          <div>
+            <canvas id="canvas3d" />
           </div>
           <div style={{marginTop:"500px"}}>
           <p>Hello</p>
