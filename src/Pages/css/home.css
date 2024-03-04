@@ -180,6 +180,10 @@
       box-shadow: 4px 4px 20px rgba(50, 50, 50, 0.25);
     }
 
+    .image-container {
+      overflow: hidden; /* Ensure image doesn't overflow its container */
+    }
+
     .newsletter-main{
       margin-top: -340px;
       padding: 0px 0px 100px 100px;

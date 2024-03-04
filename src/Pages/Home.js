@@ -171,11 +171,23 @@ function Home () {
                   <div>
                     <a href="/">
                       <img className="service-logo" src={ibj} alt="Service Logo"/>
+                    </a>
+                    <a href="https://www.loungemembers.com/">
                       <img className="service-logo" src={members} alt="Service Logo"/>
+                    </a>
+                    <a href="https://www.partyparty.jp/">
                       <img className="service-logo" src={party} alt="Service Logo"/>
+                    </a>
+                    <a href="https://www.bridalnet.co.jp/">
                       <img className="service-logo" src={bridalnet} alt="Service Logo"/>
+                    </a>
+                    <a href="https://www.rush01.com/">
                       <img className="service-logo" src={gohan} alt="Service Logo"/>
+                    </a>
+                    <a href="https://w-navi.jp/">
                       <img className="service-logo" style={{height:"60px"}} src={navi} alt="Service Logo"/>
+                    </a>
+                    <a href="https://www.ibj-life.jp/">
                       <img className="service-logo" src={ibjlife} alt="Service Logo"/>
                     </a> 
                   </div>
@@ -184,12 +196,22 @@ function Home () {
                   <div style={{height:"1px", width:"250px", backgroundColor:"#00509e", marginTop:"-15px", marginBottom:"30px", opacity:"20%"}}/>
                   <div style={{height:"1px", width:"100px", backgroundColor:"red", marginTop:"-15px", marginBottom:"30px", opacity:"20%"}}/>
                 </div>
-                <div>
-                  <img className="service-logo" src={zwei} alt="Service Logo"/>
-                  <img className="service-logo" src={sunmari} alt="Service Logo"/>
-                  <img className="service-logo" src={youbride} alt="Service Logo"/>
-                  <img className="service-logo" src={ibjf} alt="Service Logo"/>
-                  <img className="service-logo" src={kvillage} alt="Service Logo"/>
+              <div>
+                <a href="https://www.zwei.com/">
+                  <img className="service-logo" src={zwei} alt="Service Logo" />
+                </a>
+                <a href="https://www.sunmarie.co.jp/">
+                  <img className="service-logo" src={sunmari} alt="Service Logo" />
+                </a>
+                <a href="https://youbride.jp/">
+                  <img className="service-logo" src={youbride} alt="Service Logo" />
+                </a>
+                <a href="https://ibf.ibjapan.jp/">
+                  <img className="service-logo" src={ibjf} alt="Service Logo" />
+                </a>
+                <a href="https://kvillage.co.jp/">
+                  <img className="service-logo" src={kvillage} alt="Service Logo" />
+                </a>
                 </div>
               </div>
               </div>
