@@ -3,6 +3,7 @@ import Appbar from "./Components/Appbar";
 // import Gsap from "./Components/Gsaptest";
 import './App.css';
 import IBJthought from "./Components/IBJthought";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Appbar />
         <IBJthought/>
         <Home />
+        <Footer/>
         {/* <Gsap/> */}
       </div>
     </>
