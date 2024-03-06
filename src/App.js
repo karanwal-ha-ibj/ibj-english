@@ -7,7 +7,7 @@ import IBJthought from "./Components/IBJthought";
 function App() {
   return (
     <>
-      <div>
+      <div style={{overflow:"hidden"}}>
         <Appbar />
         <IBJthought/>
         <Home />
