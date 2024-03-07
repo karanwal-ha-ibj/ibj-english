@@ -149,6 +149,7 @@
  }
  @media (max-width: 900px) {
     .text-image {
+      display: none;
       margin-top: 300px;
       margin-left: -340px;
       width: 100;
@@ -161,8 +162,8 @@
   }
   @media (max-width: 900px) {
     .services-wrapper{
-      margin-left: 100px;
-      margin-top: -500px;
+      margin-left: 65px;
+      margin-top: -150px;
     }
   }
 
@@ -222,7 +223,7 @@
 
 
 .ceo-div{
-  margin: 100px 250px 150px 250px;
+  margin: 150px 250px 200px 250px;
   display: flex;
   justify-content: center;
 }
@@ -240,13 +241,24 @@
   color: #00478c;
   margin-left: 50px;
 }
-@media (max-width: 600px) {
+.ceo-line{
+  height: 0.5px;
+  background-color: #7a9ec2;
+  margin-top: -10px;
+}
+@media (max-width: 900px) {
     .ceo-heading{
       /* text-align: center; */
-      font-weight: 900;
+      font-weight: 800;
       font-size: 30px;
       margin-left: 0px;
       text-align: center;
+    }
+    .ceo-line{
+      height: 0.5px;
+      background-color: #7a9ec2;
+      margin-top: -10px;
+      margin: 0px 100px;
     }
   }
 
@@ -318,7 +330,7 @@
 }
 @media (max-width: 800px) {
   .common-heading{
-    margin: 100px 20px 70px 20px;
+    margin: 100px 100px 70px 100px;
   }
 }
 

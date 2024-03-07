@@ -127,7 +127,7 @@ function Home () {
         <div className="ceo-div">
           <div style={{width:"100%"}}>
             <h1 className="ceo-heading">Message from the CEO</h1>
-            <div style={{ height: "0.5px", backgroundColor: "#7a9ec2", marginTop: "-10px", width:"100%" }} />
+            <div className="ceo-line" />
             <div className="ceo-subdiv">
               <img className="ceo-icon" src={quote} alt="" />
               <div className="ceo-subsubdiv">
