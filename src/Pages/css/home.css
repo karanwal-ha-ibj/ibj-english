@@ -310,7 +310,7 @@
 }
 
 .ceo-image{
-  height: 300px;
+  height: 400px;
   border-radius: 200px;
   margin-top: -30px;
 }
@@ -326,7 +326,7 @@
 }
 
 .common-heading{
-  margin: 0px 250px 100px 250px;
+  margin: 0px 0px 100px 250px;
 }
 @media (max-width: 800px) {
   .common-heading{

@@ -32,12 +32,14 @@ const Appbar = () => {
             </a>
         </div>
 
-        <div className="mobmenu-wrapper" onClick={toggleDropdown}>
+        <div className="mobmenu-wrapper">
 
             <div style={{display:"flex", alignItems:"center", gap: "20px"}}>
-                <MenuIcon style={{ color: "#00509e", width: "21px" }}></MenuIcon>
+                <MenuIcon style={{ color: "#00509e", width: "21px" }} onClick={toggleDropdown}></MenuIcon>
                 <div className="moblanguage-wrapper">
+                  <a href="https://www.ibjapan.jp/">
                     <LanguageIcon style={{ color: "#00509e", width: "21px" }} />
+                  </a>
                 </div>
             </div>
 
