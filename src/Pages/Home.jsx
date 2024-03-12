@@ -173,14 +173,14 @@ function Home() {
 
         {/* <div className="common-heading">
           <h1 className="ceo-heading">Topics</h1>
-          <div style={{ height: "0.5px", backgroundColor: "#7a9ec2", marginTop: "-10px" }} />
+          <div style={{ height: "2px", backgroundColor: "#7a9ec2", marginTop: "-10px" }} />
         </div> */}
 
         <div className="common-heading">
           <h1 className="ceo-heading">Services</h1>
           <div
             style={{
-              height: "0.5px",
+              height: "1px",
               backgroundColor: "#7a9ec2",
               marginTop: "-10px",
             }}
@@ -279,7 +279,7 @@ function Home() {
                     alt="Service Logo"
                   />
                 </a>
-                <p style={{ color: "#01abd0", fontWeight: "700" }}>
+                <p style={{ color: "#01abd0", fontWeight: "500" }}>
                   (in Japanese)
                 </p>
               </div>
@@ -336,7 +336,7 @@ function Home() {
                     alt="Service Logo"
                   />
                 </a>
-                <p style={{ color: "#01abd0", fontWeight: "700" }}>
+                <p style={{ color: "#01abd0", fontWeight: "500" }}>
                   (in Japanese)
                 </p>
               </div>
@@ -348,7 +348,7 @@ function Home() {
         <h1 className="ceo-heading">News Release</h1>
         <div
           style={{
-            height: "0.5px",
+            height: "1px",
             backgroundColor: "#7a9ec2",
             marginTop: "-10px",
           }}
