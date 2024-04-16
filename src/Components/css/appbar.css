@@ -7,9 +7,7 @@
     background: rgba(255, 255, 255, 0.3); 
     /* box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05); */
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 5px 0px ;
     z-index: 1000;
-    transition: padding 0.3s ease; 
   }
   .appbar.scrolled{
     padding: 10px 0px ;
@@ -55,7 +53,7 @@
   }
 
   .language-wrapper{
-    border: 1px solid #e6e8ec;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,6 +77,7 @@
     color: #151515;
     transition: font-size 0.3s ease;
     font-size: 15px;
+    cursor: pointer;
   }
 
   @media (max-width: 960px) {
@@ -96,26 +95,90 @@
 
   /* appbar.css */
 
-  .menu-item {
-      position: relative;
-    }
-  
-  .menu-item::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    border-radius: 50px;
-    bottom: 5px;
-    left: 0;
-    background-color: #005cb5;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.3s ease;
+.menu-item {
+    position: relative;
   }
+
+.menu-item::after {
+  content: '';
+  position: absolute;
+  width: 101%;
+  height: 3px;
+  border-radius: 50px;
+  bottom: -10px;
+  left: 0;
+  background-color: #005cb5;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
   
-  .menu-item:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+}
+
+.dropdown-list {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.94);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  backdrop-filter: blur(7px); 
+  z-index: 1;
+  flex-direction: column;
+  padding: 20px;
+  gap: 7px;
+}
+
+.dropdown-content{
+  text-decoration: none;
+  color: #005cb5;
+  font-weight: 500;
+  transition: all 0.3s ease-out;
+}
+/* .dropdown-content:hover{
+  font-size: 17px;
+} */
+
+.dropdown:hover .dropdown-list {
+  display: flex;
+}
+
+.dropdown-line{
+  background-color: #ebeff2;
+  height: 1px;
+  margin: 10px 0px;
+}
+
+.dropdown-item {
+    position: relative;
   }
-  
+
+.dropdown-item::after {
+  content: '';
+  position: absolute;
+  width: 30%;
+  height: 1px;
+  border-radius: 50px;
+  bottom: -2px;
+  left: 0;
+  background-color: #005cb5;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-item:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

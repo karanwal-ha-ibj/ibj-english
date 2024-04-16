@@ -1,0 +1,115 @@
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+  /* transform: skewY(-5deg); */
+}
+
+.parallax-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://www.ibjapan.jp/information/wp-content/uploads/2017/11/img_cover_corporate_main.jpg');
+  background-size: cover;
+  background-position: center;
+  transform: translate3d(0, 0, 0);
+  z-index: -1;
+}
+
+.heading{
+    /* transform: skewY(5deg); */
+    background-color: white;
+    color: #00519f;
+    font-weight: 900;
+    width: fit-content;
+    padding: 35px 50px;
+    margin-top: 170px;
+    margin-left: 100px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location{
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    padding-left: 50px;
+}
+
+.location_text{
+    /* color: #505050; */
+    font-size: 13px;
+}
+
+.location_text_dest{
+    color: #00478c;
+
+}
+
+.common-heading{
+  margin: 0px 600px 100px 0px;
+}
+@media (max-width: 800px) {
+  .common-heading{
+    margin: 100px 100px 70px 100px;
+  }
+}
+.ceo-heading{
+  font-weight: 500;
+  color: #00478c;
+  margin-left: 50px;
+}
+.ceo-line{
+  height: 1px;
+  background-color: #7a9ec2;
+  margin-top: -10px;
+}
+@media (max-width: 900px) {
+    .ceo-heading{
+      /* text-align: center; */
+      font-weight: 800;
+      font-size: 30px;
+      margin-left: 0px;
+      text-align: center;
+    }
+    .ceo-line{
+      height: 0.5px;
+      background-color: #7a9ec2;
+      margin-top: -10px;
+      margin: 0px 100px;
+    }
+  }
+
+.galary{
+    display: flex;
+    gap: 100px;
+}
+
+.panel{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    box-shadow: 4px 4px 30px rgba(90, 90, 90, 0.3);
+    transition: all 0.5s ease;
+}
+.panel:hover{
+    transform: scale(1.1);
+    box-shadow: 4px 4px 60px rgba(90, 90, 90, 0.5);
+}
+
+.panel_img_company_text{
+    color: #00519f;
+    font-weight: 900;
+    margin: 30px 30px;
+}
+
+.arrow{
+    width: 25px;
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}

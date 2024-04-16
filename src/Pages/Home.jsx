@@ -1,5 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import gsap from "gsap";
+import Appbar from "../Components/Appbar";
+import IBJthought from "../Components/IBJthought";
+import Footer from "../Components/Footer";
 // import "./css/homeanime.scss";
 // import "./animation";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -95,6 +98,8 @@ function Home() {
 
   return (
     <div>
+      <Appbar />
+      <IBJthought />
       <div>
         <div className="main-bg">
           <div className="home-wrapper2">
@@ -355,7 +360,7 @@ function Home() {
         />
       </div>
       <div className="news">
-        <p className="news-heading">March 1st, 2024</p>
+        <p className="news-heading">March 25th, 2024</p>
         <div
           style={{
             display: "flex",
@@ -366,12 +371,11 @@ function Home() {
         >
           <a
             className="news-subheadng"
-            href="https://www.ibj-gl.com/wp-content/uploads/2024/03/%E8%8B%B1%E8%A8%B3%E7%89%88%E6%8B%9B%E9%9B%86%E9%80%9A%E7%9F%A5_240228.pdf"
+            href="https://www.ibj-gl.com/wp-content/themes/ibj-gl-wp/img/ir/ir_pdf/OrdinaryGeneralMeeting-of-Shareholders/Notice_of_Convocation_of_the_18th_Annual_General_Meeting_of_Shareholders.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ✱ Notice of Convocation of the 18th Annual General Meeting of
-            Shareholders
+            ✱ Annual Securities Report
           </a>
           <img src={pdf} alt="" style={{ width: "20px" }} />
         </div>
@@ -541,6 +545,9 @@ function Home() {
         autoPlayDelay={2}
         style={{marginTop:"200px"}}
         /> */}
+      
+      <Footer/>
+      
     </div>
   );
 }

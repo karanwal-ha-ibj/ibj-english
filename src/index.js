@@ -5,11 +5,17 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 import Home from "./App";
+import Aboutus from "./Pages/Aboutus";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+
+  {
+    path: "/aboutus",
+    element: <Aboutus />,
   },
 ]);
 
