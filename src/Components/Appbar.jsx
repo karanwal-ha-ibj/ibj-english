@@ -30,11 +30,11 @@ const Appbar = () => {
                 <div class="dropdown-line"/>
                 <a class="dropdown-content dropdown-item" href="/">Management Philosophy & Code of Conduct</a>
                 <div class="dropdown-line"/>
-                <a class="dropdown-content dropdown-item" href="/">Company Profile</a>
+                <a class="dropdown-content dropdown-item" href="aboutus/companyprofile">Company Profile</a>
                 <div class="dropdown-line"/>
                 <a class="dropdown-content dropdown-item" href="/">Board Member and Executive Officers</a>
                 <div class="dropdown-line"/>
-                <a class="dropdown-content dropdown-item" href="/">IBJ's History</a>
+                <a class="dropdown-content dropdown-item" href="aboutus/companyhistory">IBJ's History</a>
                 <div class="dropdown-line"/>
                 <a class="dropdown-content dropdown-item" href="/">Group Companies</a>
             </div>
@@ -42,7 +42,7 @@ const Appbar = () => {
           <div class="dropdown">
             <p className="dropbtn menuword menu-item"><p>Services</p></p>
               <div class="dropdown-list">
-                <a class="dropdown-content" href="/">Marrage Hunting Service</a>
+                <a class="dropdown-content" href="marriagehunting">Marriage Hunting Service</a>
                 <div className="dropdown-line"/>
                 <a class="dropdown-content" href="/">Life Design Service</a>
             </div>

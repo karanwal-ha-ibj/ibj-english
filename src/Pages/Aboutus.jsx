@@ -30,7 +30,7 @@ function Aboutus() {
 
     return (
     <div>
-        <div style={{display:"flex", flexDirection:"column"}}>
+        <div>
             <Appbar />
                 
             <div className="parallax-container">
@@ -50,23 +50,27 @@ function Aboutus() {
                 
             <div className="main">                    
                 <div className="galary">
-                    <div className="panel">
-                        <img className="panel_img_company_image" src={panel_img_company} alt="" />
-                        <p className="panel_img_company_text">Company Profile</p>
-                        <img className="arrow" alt="" src={right_arrow_semi}/>
-                    </div>
-                    <div className="panel">
-                        <img className="panel_img_company_image" src={panel_img_history} alt="" />
-                        <p className="panel_img_company_text">Company History</p>
-                        <img className="arrow" alt="" src={right_arrow_semi}/>
-                    </div>
+                    <a href="aboutus/companyprofile" style={{textDecoration:"none"}}>
+                        <div className="panel">
+                            <img className="panel_img_company_image" src={panel_img_company} alt="" />
+                            <p className="panel_img_company_text">Company Profile</p>
+                            <img className="arrow" alt="" src={right_arrow_semi} />
+                        </div>
+                    </a>
+                    <a href="aboutus/companyhistory" style={{textDecoration:"none"}}>
+                        <div className="panel">
+                            <img className="panel_img_company_image" src={panel_img_history} alt="" />
+                            <p className="panel_img_company_text">Company History</p>
+                            <img className="arrow" alt="" src={right_arrow_semi}/>
+                        </div>
+                    </a>
                     <div className="panel">
                         <img className="panel_img_company_image" src={panel_img_message} alt="" />
                         <p className="panel_img_company_text">Message from CEO</p>
                         <img className="arrow" alt="" src={right_arrow_semi}/>
                     </div>
                 </div>
-                <div className="galary"  style={{marginTop:"50px"}}>
+                <div className="galary"  style={{marginTop:"100px"}}>
                     <div className="panel">
                         <img className="panel_img_company_image" src={panel_img_member} alt="" />
                         <p className="panel_img_company_text">Board Member and Executive Officers</p>

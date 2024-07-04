@@ -1,0 +1,46 @@
+.lineup-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 80px;
+}
+
+.lineup-tag{
+    width: 350px;
+  background: white;
+  margin: 0px 50px;
+  border: 0.5px solid #e6e6e6;
+  /* border-radius: 10px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease-out;
+}
+.lineup-tag:hover{
+    transform: scale(1.01);
+    box-shadow: 4px 4px 20px rgba(50, 50, 50, 0.1);
+}
+
+.lineup-logo{
+    width: 100%;
+    padding: 20px 0px;
+}
+.lineup-img{
+    width: 100%;
+}
+
+.lineup-text1{
+  padding: 25px 10px;
+  font-size: 20px;
+  color: #007cbd;
+  font-weight: 900;
+}
+.lineup-text2{
+  padding: 10px 10px;
+  text-align:justify;
+  padding: 0px 20px 30px 20px;
+  color: #303030;
+}

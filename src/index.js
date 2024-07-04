@@ -6,6 +6,9 @@ import reportWebVitals from "./reportWebVitals";
 
 import Home from "./App";
 import Aboutus from "./Pages/Aboutus";
+import Companyprofile from "./Pages/AboutIBJ/Companyprofile";
+import Companyhistory from "./Pages/AboutIBJ/Companyhistory";
+import Marriagehunting from "./Pages/Services/marriagehunting";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +20,22 @@ const router = createBrowserRouter([
     path: "/aboutus",
     element: <Aboutus />,
   },
+
+  {
+    path: "aboutus/companyprofile",
+    element: <Companyprofile />,
+  },
+
+  {
+    path: "aboutus/companyhistory",
+    element: <Companyhistory />,
+  },
+
+  {
+    path: "/marriagehunting",
+    element: <Marriagehunting />,
+  },
+
 ]);
 
 ReactDOM.render(
