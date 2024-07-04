@@ -30,11 +30,11 @@ const Appbar = () => {
                 <div class="dropdown-line"/>
                 <a class="dropdown-content dropdown-item" href="/">Management Philosophy & Code of Conduct</a>
                 <div class="dropdown-line"/>
-                <a class="dropdown-content dropdown-item" href="aboutus/companyprofile">Company Profile</a>
+                <a class="dropdown-content dropdown-item" href="/aboutus/companyprofile">Company Profile</a>
                 <div class="dropdown-line"/>
                 <a class="dropdown-content dropdown-item" href="/">Board Member and Executive Officers</a>
                 <div class="dropdown-line"/>
-                <a class="dropdown-content dropdown-item" href="aboutus/companyhistory">IBJ's History</a>
+                <a class="dropdown-content dropdown-item" href="/aboutus/companyhistory">IBJ's History</a>
                 <div class="dropdown-line"/>
                 <a class="dropdown-content dropdown-item" href="/">Group Companies</a>
             </div>

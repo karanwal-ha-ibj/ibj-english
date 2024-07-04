@@ -3,6 +3,7 @@ import gsap from "gsap";
 import Appbar from "../Components/Appbar";
 import IBJthought from "../Components/IBJthought";
 import Footer from "../Components/Footer";
+import emailjs from 'emailjs-com';
 // import "./css/homeanime.scss";
 // import "./animation";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -96,6 +97,67 @@ function Home() {
     );
   }, []);
 
+  // const [email, setEmail] = useState(""); // State for email input
+
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+
+  //   // Define the template parameters
+  //   const templateParams = {
+  //     user_email: email,
+  //   };
+
+  //   // Replace 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', and 'YOUR_USER_ID' with your actual IDs from EmailJS
+  //   emailjs.send("service_gj460zn", "template_f5ksl7l", templateParams, "Nhb4s1FQ01nuKR-7l")
+  //     .then((response) => {
+  //       console.log("SUCCESS!", response.status, response.text);
+  //     }, (error) => {
+  //       console.log("FAILED...", error);
+  //     });
+  // };
+
+  const [emailData, setEmailData] = useState({
+        from_email: ''
+    });
+
+    const [email, setEmail] = useState('');
+    const [isEmailSent, setIsEmailSent] = useState(false);
+    const [emailError, setEmailError] = useState('');
+
+    useEffect(() => {
+        if (isEmailSent || emailError) {
+            const timeout = setTimeout(() => {
+                setIsEmailSent(false);
+                setEmailError('');
+            }, 5000);
+
+            return () => clearTimeout(timeout);
+        }
+    }, [isEmailSent, emailError]);
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        if (name === "from_email") setEmail(value);
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        emailjs.send('service_gj460zn', 'template_f5ksl7l', { from_email: email }, 'Nhb4s1FQ01nuKR-7l')
+            .then((response) => {
+                console.log('Email sent successfully:', response);
+                setIsEmailSent(true);
+                setEmailError('');
+            })
+            .catch((error) => {
+                console.error('Email sending failed:', error);
+                setIsEmailSent(false);
+                setEmailError('Failed to send email. Please try again later.');
+            })
+            .finally(() => {
+                setEmail('');
+            });
+    };
+
   return (
     <div>
       <Appbar />
@@ -135,16 +197,22 @@ function Home() {
         </div>
 
         <div className="newsletter-main">
-          <div>
-            <p>Subscribe to our Newsletter</p>
-          </div>
-          <div className="newsletter-wrapper">
-            <input className="newsletter-input" placeholder="E-mail"></input>
-            <button type="submit" className="newsletter-button">
-              <img src={thinarrow} style={{ width: "30px" }} alt=""></img>
-            </button>
-          </div>
+        <div>
+          <p>Subscribe to our Newsletter</p>
         </div>
+          <form onSubmit={handleSubmit}>
+            <div className="newsletter-wrapper">
+              <input id="from_email" name="from_email" className="newsletter-input" type="email" placeholder="E-mail" value={email} onChange={handleChange} />
+              <button type="submit" className="newsletter-button">
+                <img src={thinarrow} style={{ width: "30px" }} alt="Submit" />
+              </button>
+              <div style={{ height: "auto" }}>
+                {isEmailSent && <p style={{ textAlign: "center", marginTop: "1rem", color: "#00a600" }}>Email sent successfully!</p>}
+                {emailError && <p style={{ color: 'red' }}>{emailError}</p>}
+              </div>
+            </div>
+          </form>
+      </div>
 
         <div className="ceo-div">
           <div style={{ width: "100%" }}>
